@@ -1,3 +1,7 @@
+com\example\fcp\fcp\repository\NoteRepository.class
+com\example\fcp\fcp\ResourceNotFoundException.class
+com\example\fcp\fcp\controller\NoteController.class
 com\example\fcp\fcp\Greeting.class
+com\example\fcp\fcp\model\Notes.class
 com\example\fcp\fcp\FcpApplication.class
 com\example\fcp\fcp\GreetingController.class
