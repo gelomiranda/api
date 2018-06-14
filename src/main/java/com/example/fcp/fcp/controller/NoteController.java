@@ -9,6 +9,9 @@ import org.springframework.web.bind.annotation.RestController;
 import com.example.fcp.fcp.model.Notes;
 
 import java.util.List;
+import javax.validation.Valid;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 
 @RestController
 @RequestMapping("/notes")
@@ -21,5 +24,16 @@ public class NoteController {
     public List<Notes> getAllNotes() {
         return notesRepository.findAll();
     }
+    
+    
+    // Create a new Note
+    // Create a new Note
+@PostMapping("/notes")
+public Notes createNote(@Valid @RequestBody Notes note) {
+    return notesRepository.save(note);
+}
+    
+    
+    
 
 }
